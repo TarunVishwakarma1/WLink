@@ -42,7 +42,7 @@ const Navigation = ({users}:Props)=>{
                 src={"./assets/walletImage.svg"}
                 width={40}
                 height={40}
-                alt='plura logo'
+                alt='WLink logo'
                 className={isDarkTheme ? "invert" : ""}
             />
             <span className='text-xl font-bold'>
@@ -52,9 +52,11 @@ const Navigation = ({users}:Props)=>{
         <nav className='hidden md:block absolute left-[50%] top-[50%] transform translate-x-[-50%]
         translate-y-[-50%]'>
             <ul className='flex items-center justify-center gap-8'>
-                <Link href={'/about'}>About</Link>
+                <Link href={'/site'}>Home</Link>
+                <Link href={'/site/about'}>About</Link>
                 {/* <Link href={'#'}>Documentation</Link> */}
-                <Link href={'/features'}>Features</Link>
+                <Link href={'/site/features'}>Features</Link>  
+                
             </ul>
         </nav>
         <aside className='flex gap-2 items-center'>
