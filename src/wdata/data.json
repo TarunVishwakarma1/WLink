@@ -1,0 +1,46 @@
+{
+    "navBar":{
+        "imagePath":"./assets/walletImage.svg",
+        "projectName":"WLink",
+        "Navigation":[{
+            "name":"Home",
+            "link":"/site"
+        },
+        {
+            "name":"About",
+            "link":"/site/about"
+        },
+        {
+            "name":"Features",
+            "link":"/site/features"
+        }],
+
+    "logInButtonNameInitial":"Login",
+    "logInButtonNameAfter":"Sign Up",
+    "logInLink":"/wallet/sign-in"
+    },
+    "heroPage":{
+        "mainText":{
+            "text1":"Link your",
+            "text2":"Wallets",
+            "flipText":["Securely","Faster","Easier"],
+            "text3":"Sign in with",
+            "text4":"Google",
+            "link":"/wallet/sign-in"
+        }
+    },
+    "notFoundPage":{
+        "mainText":{
+            "header":"The hell is this?",
+            "text":"This page doesn't exist. However, the code of this project is open source. If you feel the need to add more pages, visit the GitHub repo in the link below."
+        },
+        "homePage":{
+            "name":"Home Page",
+            "link":"/site"
+        },
+        "gitHubLink":{
+            "name":"gitHub",
+            "link":"https://github.com/TarunVishwakarma1/WLink.git"
+        }
+    }
+}
