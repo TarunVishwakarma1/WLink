@@ -7,14 +7,15 @@ import {
 type Props = {
     initialName:string
     afterName:string
+    Custclassname?:string|undefined
 }
 
-export default function LogInButton({initialName, afterName}:Props) {
+export default function LogInButton({initialName, afterName, Custclassname}:Props) {
   
   return (
     <div>
       <Modal>
-        <ModalTrigger className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+        <ModalTrigger className={`${Custclassname} flex justify-center group/modal-btn`}>
           <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
           {initialName}
           </span>

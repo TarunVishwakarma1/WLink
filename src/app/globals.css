@@ -57,6 +57,24 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+  .bg-black-gradient {
+    background: linear-gradient(
+      144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+  }
+
+  .bg-white-gradient{
+    background: linear-gradient(
+      -35.61deg, 
+      #c4c3ca -278.56%, 
+      #e4e4e4 -78.47%, 
+      #ffffff 91.61%
+      );
+  }
 }
 
 @layer base {
@@ -65,5 +83,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .filter {
+    filter: invert(20%) sepia(100%) saturate(5000%) hue-rotate(180deg) brightness(100%) contrast(100%);
   }
 }
