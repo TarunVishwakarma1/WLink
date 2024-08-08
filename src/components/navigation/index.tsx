@@ -46,21 +46,20 @@ const Navigation = ({ users }: Props) => {
         <nav className='hidden md:block absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]'>
           <ul className='flex items-center justify-center gap-8'>
             {NavbarData.navBar.Navigation.map((item: Navigation, index: number) => (
-              <Link href={item.link} key={index} className="hover:bg-gray-300 px-2 py-1 rounded-3xl">
+              <Link href={item.link} key={index} className="hover:bg-gray-300 px-2 py-1 rounded-3xl hover:text-black">
                 {item.name}
               </Link>
             ))}
           </ul>
         </nav>
         <aside className='flex gap-2 items-center'>
-          {isSignedIn ? "" : (
+          {isSignedIn ? <UserButton /> : (
             <div>
               <Link href={NavbarData.navBar.logInLink} className='bg-primary text-white py-2 rounded-md hover:bg-primary/80 dark:text-black'>
                 <LogInButton initialName={NavbarData.navBar.logInButtonNameInitial} afterName={NavbarData.navBar.logInButtonNameAfter} Custclassname="bg-black dark:bg-white dark:text-black text-white"/>
               </Link>
             </div>
           )}
-          {isSignedIn && <UserButton />}
           <ModeToggle />
         </aside>
       </div>
@@ -80,12 +79,13 @@ const Navigation = ({ users }: Props) => {
               </li>
             ))}
             </div>
+            {isSignedIn ? <UserButton /> : 
             <Link href={NavbarData.navBar.logInLink} className='bg-primary text-white rounded-md hover:bg-primary/80 dark:text-black'>
             <div onClick={() => setToggle((prev) => !prev)}>
               <LogInButton initialName={NavbarData.navBar.logInButtonNameInitial} afterName={NavbarData.navBar.logInButtonNameAfter} Custclassname="dark:text-black text-white"/>
             </div>
             </Link>
-            {isSignedIn && <UserButton />}
+            }
             <ModeToggle />
           </ul>
         </div>
