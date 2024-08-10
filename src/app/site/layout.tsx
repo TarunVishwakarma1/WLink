@@ -9,10 +9,11 @@ const Layout= async({children}:{children:React.ReactNode})=>{
         <ClerkProvider
             appearance={{baseTheme: dark}}
         >
-            <main className="h-full">
+            <main className="h-full overflow-y-scroll scrollbar-hide">
                 <Navigation/>
                 {children}
             </main>
+            
         </ClerkProvider>
     )
 

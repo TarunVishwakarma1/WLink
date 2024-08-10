@@ -10,7 +10,7 @@ import { ModeToggle } from "@/components/global/mode-toggle";
 import NavbarData from "@/wdata/data.json";
 import LogInButton from "./LogInButton";
 import {LightMenu,DarkMenu,LightClose,DarkClose} from '../image/index'
-
+import iconImage from "@/components/assets/walletImage.svg"
 type Props = {
   users?: null | User;
 };
@@ -32,7 +32,7 @@ const Navigation = ({ users }: Props) => {
     <div className='fixed top-0 right-0 left-0 p-4 flex items-center justify-between z-10'>
       <aside className='flex items-center gap-2'>
         <Image
-          src={NavbarData.navBar.imagePath}
+          src={iconImage}
           width={40}
           height={40}
           alt='WLink logo'

@@ -24,6 +24,13 @@ const config = {
       },
     },
     extend: {
+      scrollbar: {
+        hide: {
+          '::-webkit-scrollbar': { display: 'none' },
+          '-ms-overflow-style': 'none', /* For IE and Edge */
+          'scrollbar-width': 'none' /* For Firefox */,
+        },
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

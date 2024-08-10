@@ -1,6 +1,6 @@
 {
     "navBar":{
-        "imagePath":"./assets/walletImage.svg",
+        "imagePath":"@/components/assets/walletImage.svg",
         "projectName":"WLink",
         "Navigation":[{
             "name":"Home",
